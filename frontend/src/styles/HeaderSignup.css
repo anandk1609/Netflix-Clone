@@ -10,6 +10,11 @@ body {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+header {
+   position: absolute;
+   z-index: 1;
+}
+
 .signup__header {
    display: flex;
    flex-direction: row;
@@ -17,7 +22,9 @@ body {
    align-items: center;
    background: transparent;
    height: 80px;
-   margin: 0 32px;
+   width: 1200px;
+   margin: 0 400px;
+   padding-top: 10px;
 }
 
 .signup__header-section {
@@ -44,9 +51,9 @@ body {
    flex-direction: row;
    align-items: center;
    padding: 5px 10px;
-   margin-right: 10px;
-   border: 1px solid rgba(255, 255, 255, 0.2);
-   background-color: rgba(90, 90, 90, 0.1);
+   margin-right: 30px;
+   border: 1px solid rgba(255, 255, 255, 0.4);
+   background-color: rgba(0, 0, 0, 0.5);
    box-sizing: content-box;
    border-radius: 4px;
 }
@@ -76,4 +83,8 @@ body {
 .signup__header-section {
    display: flex;
    justify-content: space-between;
+}
+
+.btn:hover {
+   opacity: 0.8;
 }
