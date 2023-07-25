@@ -8,7 +8,7 @@ function onChangeEmail() {
 
 function onTouchShow() {
    console.log("Show span clicked");
-   document.querySelector(".display-password").type = "HIDE";
+   document.querySelector(".display-password").textContent = "HIDE";
 }
 
 export default function LoginBackground() {
@@ -40,9 +40,16 @@ export default function LoginBackground() {
                         <input type="checkbox" name="rememberMe" className="remember-checkbox"/>
                         <span className="rememeber-label">Remember me</span>
                      </div>
-                     <a href="/LoginHelp" className='login-help'>Need help?</a> 
+                     <a href="/LoginHelp" target="_self" className='login-help'>Need help?</a> 
                   </div>
                </form>
+               <section className="newuser-section">
+                  <div className="new-user">
+                     <p className="newtext">New to Netflix?</p>
+                     <a href="/" target="_self" className='new-signup'>Sign up now.</a>
+                  </div>
+                  <p className='learnmore'>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+               </section>
             </div>
          </div>
       </section>
