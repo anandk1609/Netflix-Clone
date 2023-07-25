@@ -3,6 +3,7 @@ import HeaderSignup from './HeaderSignup';
 import "../styles/SignupBackg.css"
 
 export default function SignupBackground() {
+
    return (
       <section className="signup__background">
          <HeaderSignup />
@@ -14,11 +15,11 @@ export default function SignupBackground() {
                <article className="signup__inputs">
                   <section className="signup__inputBox-container">
                      <section className="signup__inputBox">
-                        <input type="text" name="email" minlength="5" maxlength="50" placeholder='' className="signup__email-input" required/>
+                        <input type="text" name="email" minLength="5" maxLength="50" placeholder='' className="signup__email-input" required/>
                         <span className='signup__label'>Email Address</span>
                      </section>
                      <section className="signup__input-invalid">
-                        <p class="invalid__msg valid">Email is required</p>
+                        <p className="invalid__msg valid">Email is required</p>
                      </section>
                   </section>
                </article>

@@ -135,7 +135,7 @@
 
 .signup__inputBox input:valid ~ span,
 .signup__inputBox input:focus ~ span {
+   font-size: 11px;
    transform: translateY(-10px);
-   transition: transform 0.1s;
-   font-size: 14px;
+   transition: font-size .1s ease,top .1s ease,transform .1s ease;
 }

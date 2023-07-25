@@ -1,5 +1,6 @@
 import React from 'react';
+import LoginBackground from "../components/LoginBackground";
 
 export default function Login() {
-   return <div>Login Page</div>
+   return <LoginBackground />
 };

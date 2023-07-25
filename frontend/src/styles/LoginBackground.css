@@ -1,0 +1,201 @@
+.login-container {
+   height: 120vh;
+   background: url("https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/95bae10c-9773-4447-af4e-612a244231bd/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.login-background {
+   height : 120vh;
+   background: rgba(0,0,0,0.5);
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+.login-box {
+   position: absolute;
+   top: 90px;
+   width: 450px;
+   height: auto;
+   min-height: 640px;
+   background-color: rgba(0,0,0,0.7);
+   border-radius: 4px;
+}
+
+.login-header {
+   font-size: 35px;
+   font-weight: bold;
+   color: white;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+   z-index: 1;
+}
+
+.login-form {
+   margin-left: 50px;
+   margin-top: 150px;
+   display:flex;
+   flex-direction: column;
+}
+
+.email-container,.password-container {
+   display: flex;
+   flex-direction: column;
+   height:auto;
+}
+
+.password-container {
+   width: 320px;
+   margin-top: 15px;
+}
+
+.email-box, .password-box {
+   height: 55px;
+   width: 325px;
+   background: #333333;
+   border-radius: 4px;
+   display:block;
+   position: relative;
+}
+
+.email-input, .password-input {
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 18px;
+   color: white;
+   position: absolute;
+   width:80%;
+   top: 20px;
+   margin-left: 15px;
+   padding: 6px;
+   z-index: 1;
+}
+
+.email-placeholder, .password-placeholder {
+   font-size: 18px;
+   color: #8c8c8c;
+   font-weight: 400;
+   position: absolute;
+   padding: 15px;
+   padding-left: 20px;
+}
+
+.display-password {
+   position: absolute;
+   right: 10px;
+   top: 16px;
+   cursor: pointer;
+   color: #8c8c8c;
+   font-size: 14px;
+}
+
+.email-input:-webkit-autofill,
+.email-input:-webkit-autofill:hover, 
+.email-input:-webkit-autofill:focus, 
+.email-input:-webkit-autofill:active {
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: #ffffff;
+   transition: background-color 5000s ease-in-out 0s;
+   box-shadow: inset 0 0 20px 20px transparent;
+}
+
+.email-box input:invalid ~ span.email-placeholder,
+.password-box input:invalid ~ span.password-placeholder{
+   font-size: 18px;
+   transform: translateY(0);
+   transition: font-size .1s ease,top .1s ease,transform .1s ease;
+}
+
+.password-box input:invalid ~ span.display-password{
+   opacity: 0;
+}
+
+.email-box input:valid ~ span.email-placeholder,
+.email-box input:focus ~ span.email-placeholder,
+.password-box input:valid ~ span.password-placeholder,
+.password-box input:focus ~ span.password-placeholder{
+   font-size: 11px;
+   transform: translateY(-8px);
+   transition: font-size .1s ease,top .1s ease,transform .1s ease;  
+}
+
+.password-box input:valid ~ span.display-password,
+.password-box input:focus ~ span.display-password{
+   opacity: 1;
+}
+
+.email-error, .password-error {
+   opacity: 0;
+}
+
+.email-error.info , .password-error.info{
+   color: #e87c03;
+   margin-top: 5px;
+   font-size: 14px;
+   opacity: 1;
+}
+
+.email-box.error, .password-box.error {
+   border: 1px solid #e87c03;
+   border-radius: 4px;
+}
+
+.btn-submit {
+   background-color: #E50914;
+   height: 46px;
+   width: 325px;
+   justify-content: center;
+   margin-top: 35px;
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+   outline: none;
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+}
+
+.help-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 325px;
+   margin-top: 10px;
+}
+
+.remember-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   outline: none;
+}
+
+.remember-checkbox {
+   background: #737373;
+   border: 0;
+   border-radius: 2px;
+   height: 16px;
+   width: 16px;
+}
+
+.remember-checkbox input[type="checkbox"]:focus {
+   box-shadow: none;
+   background: #e6e6e6;
+}
+
+.rememeber-label {
+   color: #b3b3b3;
+   font-size: 13px;
+   margin-left: 5px;
+}
+
+a {
+   outline: none;
+   border: none;
+   text-decoration: none;
+   font-size: 13px;
+   color: #b3b3b3;
+}
